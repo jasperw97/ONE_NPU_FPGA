@@ -1,0 +1,84 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Thu Jul 30 14:11:44 2026
+| Host         : pc04 running 64-bit Ubuntu 24.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xcvu13p-fhgb2104-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_npu_axi_full_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_npu_axi_full_0_0 (user.org:user:npu_axi_full:1.0) from (Rev. 16) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Thu Jul 30 10:59:11 2026
+| Host         : pc04 running 64-bit Ubuntu 24.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xcvu13p-fhgb2104-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_npu_axi_full_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_npu_axi_full_0_0 (user.org:user:npu_axi_full:1.0) from (Rev. 15) to (Rev. 16)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_npu_axi_full_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'start_pulse_o'
+
+-Upgrade has removed port 'state_o'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Thu Jul 30 10:55:11 2026
+| Host         : pc04 running 64-bit Ubuntu 24.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xcvu13p-fhgb2104-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_npu_axi_full_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_npu_axi_full_0_0 (user.org:user:npu_axi_full:1.0) from (Rev. 9) to (Rev. 15)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_npu_axi_full_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'start_pulse_o'
+
+-Upgrade has added port 'state_o'
+
+

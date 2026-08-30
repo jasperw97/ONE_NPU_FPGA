@@ -1,0 +1,17 @@
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: tb_top.UUT.tb_design_i.axi_vip_0.inst
+Loading 00000005 into DDR...
+Checking backdoor write result at 00: 00000005
+Checking backdoor write result at 04: 213e846a
+Checking final address before write, data at write address is c9c10bc4
+Sending Start Pulse to IP...
+Waiting for TXN_DONE...
+Hardware finished!
+Checking Result at 0x50000000:
+Result is: 00000006
+Additional check at addr 04: 00000006
+Additional check at addr 08: a3429be8
+Additional check at addr 0c: 01b23163
+Additional check at addr 10: f771d7d0
+Executing Axi4 End Of Simulation checks
+$finish called at time : 10765 ns : File "/home/jasper/npu_testing_system/adder/adder.srcs/sim_1/new/tb_top.sv" Line 110

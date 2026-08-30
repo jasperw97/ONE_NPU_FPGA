@@ -1,0 +1,1 @@
+-top "tb_npu_axi_each" -snapshot "npu_behavioral_sim" 

@@ -1,0 +1,45 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /opt/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab -top tb_npu_axi_each -snapshot npu_behavioral_sim 
+Multi-threading is on. Using 46 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'output_valid_i32' remains unconnected for this instance [/home/jasper/one_npu_fpga/new_npu/01_RTL/src/npu_int16_burst.sv:1677]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-3980] File "/home/jasper/one_npu_fpga/new_npu/00_TESTBED/tb_npu_axi_each.sv" Line 462 : The SystemVerilog feature ": Sensitivity on Associative Array" is not supported yet for simulation.
+WARNING: [XSIM 43-3980] File "/home/jasper/one_npu_fpga/new_npu/00_TESTBED/tb_npu_axi_each.sv" Line 462 : The SystemVerilog feature ": Sensitivity on Associative Array" is not supported yet for simulation.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.$unit_tb_npu_axi_each_sv_1993410...
+Compiling module work.mult_pipe
+Compiling module work.MultiplyByQuantizedMultiplier
+Compiling module work.broadcast_unit(WORD_COL_IDX_WIDT...
+Compiling module work.op_decoder
+Compiling module work.desc_decoder
+Compiling module work.PE_INT8_OS
+Compiling module work.fifo(DATA_WIDTH=24)
+Compiling module work.SystolicArray_OS_INT8_REQUANT_SR...
+Compiling module work.LSU_axi_burst_default
+Compiling module work.mem_bank_1r1w_default
+Compiling module work.banked_mem_1r1w(LANES=8,ADDR_WID...
+Compiling module work.sram_unit_default
+Compiling module work.controller(MN_WIDTH=12,LANES=8)
+Compiling module work.lut_lane_mem(NUM_WORDS=65)
+Compiling module work.lut_vec_tflite_default
+Compiling module work.DW_mult_pipe_64_32(DEPTH=7)
+Compiling module work.MultiplyByQuantizedMultiplierSma...
+Compiling module work.ADD_Element
+Compiling module work.ADD_default
+Compiling module work.SUB_Element
+Compiling module work.SUB_default
+Compiling module work.MUL_Element
+Compiling module work.MUL_default
+Compiling module work.element_wise_LUT(LANES=8)
+Compiling module work.npu_int16_burst_default
+Compiling module work.npu_axi_full_burst_default
+Compiling module work.tb_npu_axi_each
+WARNING: [XSIM 43-3373] "/home/jasper/one_npu_fpga/new_npu/00_TESTBED/tb_npu_axi_each.sv" Line 4098. System function $value$plusargs is used as system task. This system function should have a LHS e.g. x=$value$plusargs().
+Built simulation snapshot npu_behavioral_sim

@@ -1,0 +1,53 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/00_TESTBED/tb_npu_axi_each.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_npu_axi_each
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/npu_axi_full_burst.v" into library work
+INFO: [VRFC 10-311] analyzing module npu_axi_full_burst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/npu_int16_burst.sv" into library work
+INFO: [VRFC 10-311] analyzing module npu_int16_burst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/SystolicArray_OS_INT8_requant_sram.sv" into library work
+INFO: [VRFC 10-311] analyzing module SystolicArray_OS_INT8_REQUANT_SRAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/PE_INT8_OS.sv" into library work
+INFO: [VRFC 10-311] analyzing module PE_INT8_OS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/fifo.sv" into library work
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/element_wise_LUT.sv" into library work
+INFO: [VRFC 10-311] analyzing module element_wise_LUT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/SUB.v" into library work
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/SUB_Element.v" into library work
+INFO: [VRFC 10-311] analyzing module SUB_Element
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/ADD.v" into library work
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/ADD_Element.v" into library work
+INFO: [VRFC 10-311] analyzing module ADD_Element
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/MUL.v" into library work
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/MUL_Element.v" into library work
+INFO: [VRFC 10-311] analyzing module MUL_Element
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/lut_vec_tflite.sv" into library work
+INFO: [VRFC 10-311] analyzing module lut_vec_tflite
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/lut_lane_mem.sv" into library work
+INFO: [VRFC 10-311] analyzing module lut_lane_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/MultiplyByQuantizedMultiplier.v" into library work
+INFO: [VRFC 10-311] analyzing module MultiplyByQuantizedMultiplier
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/MultiplyByQuantizedMultiplierSmallerThanOneExp.v" into library work
+INFO: [VRFC 10-311] analyzing module MultiplyByQuantizedMultiplierSmallerThanOneExp
+INFO: [VRFC 10-311] analyzing module DW_mult_pipe_64_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/mult_pipe.sv" into library work
+INFO: [VRFC 10-311] analyzing module mult_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/sram.sv" into library work
+INFO: [VRFC 10-311] analyzing module sram_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/banked_mem_1r1w.sv" into library work
+INFO: [VRFC 10-311] analyzing module banked_mem_1r1w
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/mem_bank_1r1w.sv" into library work
+INFO: [VRFC 10-311] analyzing module mem_bank_1r1w
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/op_decoder.sv" into library work
+INFO: [VRFC 10-311] analyzing module op_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/desc_decoder.sv" into library work
+INFO: [VRFC 10-311] analyzing module desc_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/controller.sv" into library work
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/LSU_axi_burst.sv" into library work
+INFO: [VRFC 10-311] analyzing module LSU_axi_burst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/one_npu_fpga/new_npu/01_RTL/src/broadcast_unit.sv" into library work
+INFO: [VRFC 10-311] analyzing module broadcast_unit

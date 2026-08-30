@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Jul  2 11:14:34 2026
+# Process ID         : 371963
+# Current directory  : /home/jasper/npu/npu_testing_system
+# Command line       : vivado
+# Log file           : /home/jasper/npu/npu_testing_system/vivado.log
+# Journal file       : /home/jasper/npu/npu_testing_system/vivado.jou
+# Running On         : pc04
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : AMD Ryzen Threadripper PRO 5965WX 24-Cores
+# CPU Frequency      : 1432.261 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 48
+# Host memory        : 202428 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 211018 MB
+# Available Virtual  : 204400 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/jasper/npu/npu_testing_system/adder/adder.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+open_bd_design {/home/jasper/npu/npu_testing_system/adder/adder.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_ddr4_0_2 design_1_vio_0_0 design_1_rst_ddr4_0_187M_0 design_1_jtag_axi_0_0 design_1_smartconnect_0_0 design_1_util_vector_logic_0_0 tb_design_clk_wiz_0 tb_design_axi_vip_0_0 tb_design_axi_smc_0 tb_design_rst_clk_wiz_100M_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {design_1_ddr4_0_2 design_1_vio_0_0 design_1_rst_ddr4_0_187M_0 design_1_jtag_axi_0_0 design_1_smartconnect_0_0 design_1_util_vector_logic_0_0 tb_design_clk_wiz_0 tb_design_axi_vip_0_0 tb_design_axi_smc_0 tb_design_rst_clk_wiz_100M_0}] -no_script -sync -force -quiet
+current_bd_design [get_bd_designs tb_design]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ddr4:2.2 ddr4_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins ddr4_0/C0_DDR4]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz/clk_out1 (100 MHz)} Clk_slave {/ddr4_0/c0_ddr4_ui_clk (333 MHz)} Clk_xbar {/clk_wiz/clk_out1 (100 MHz)} Master {/adder_0/M00_AXI} Slave {/ddr4_0/C0_DDR4_S_AXI} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins ddr4_0/C0_DDR4_S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins ddr4_0/C0_SYS_CLK]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_pins ddr4_0/sys_rst]
+endgroup
+open_bd_design {/home/jasper/npu/npu_testing_system/adder/adder.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status -name ip_status 
+startgroup
+set_property CONFIG.C0.DDR4_CustomParts {/home/jasper/Bob2_32GB_DDR4.csv} [get_bd_cells ddr4_0]
+endgroup
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+current_bd_design [get_bd_designs tb_design]
+close_bd_design [get_bd_designs tb_design]
+current_bd_design [get_bd_designs design_1]
+report_ip_status -name ip_status 
+create_project npu_axi_full /home/jasper/npu/npu_testing_system/npu_axi_full -part xcvu13p-fhgb2104-2-e
+add_files -norecurse {/home/jasper/npu/new_npu/01_RTL/src/graph.vh /home/jasper/npu/new_npu/01_RTL/src/params.vh /home/jasper/npu/new_npu/01_RTL/src/function.vh}
+add_files -norecurse {/home/jasper/npu/new_npu/01_RTL/src/MUL_Element.v /home/jasper/npu/new_npu/01_RTL/src/lut_lane_mem.sv /home/jasper/npu/new_npu/01_RTL/src/sram.v /home/jasper/npu/new_npu/01_RTL/src/npu_int16.sv /home/jasper/npu/new_npu/01_RTL/src/MultiplyByQuantizedMultiplierSmallerThanOneExp.v /home/jasper/npu/new_npu/01_RTL/src/SUB_Element.v /home/jasper/npu/new_npu/01_RTL/src/controller.sv /home/jasper/npu/new_npu/01_RTL/src/SystolicArray_OS_INT8_requant_sram.sv /home/jasper/npu/new_npu/01_RTL/src/ADD.v /home/jasper/npu/new_npu/01_RTL/src/banked_mem_1r1w.sv /home/jasper/npu/new_npu/01_RTL/src/lut_vec_tflite.sv /home/jasper/npu/new_npu/01_RTL/src/mult_pipe.sv /home/jasper/npu/new_npu/01_RTL/src/fifo.sv /home/jasper/npu/new_npu/01_RTL/src/MultiplyByQuantizedMultiplier.v /home/jasper/npu/new_npu/01_RTL/src/MUL.v /home/jasper/npu/new_npu/01_RTL/src/op_decoder.sv /home/jasper/npu/new_npu/01_RTL/src/desc_decoder.sv /home/jasper/npu/new_npu/01_RTL/src/mem_bank_1r1w.sv /home/jasper/npu/new_npu/01_RTL/src/element_wise_LUT.sv /home/jasper/npu/new_npu/01_RTL/src/PE_INT8_OS.sv /home/jasper/npu/new_npu/01_RTL/src/ADD_Element.v /home/jasper/npu/new_npu/01_RTL/src/SUB.v /home/jasper/npu/new_npu/01_RTL/src/LSU.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files  /home/jasper/npu/new_npu/01_RTL/src/sram.v
+update_compile_order -fileset sources_1
+add_files -norecurse /home/jasper/npu/new_npu/01_RTL/src/sram.sv
+update_compile_order -fileset sources_1
+file mkdir /home/jasper/npu/npu_testing_system/npu_axi_full/npu_axi_full.srcs/constrs_1
+file mkdir /home/jasper/npu/npu_testing_system/npu_axi_full/npu_axi_full.srcs/constrs_1/new
+close [ open /home/jasper/npu/npu_testing_system/npu_axi_full/npu_axi_full.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 /home/jasper/npu/npu_testing_system/npu_axi_full/npu_axi_full.srcs/constrs_1/new/constraints.xdc
+current_project adder
+current_project npu_axi_full
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+launch_runs synth_1 -jobs 24
+wait_on_run synth_1
+get_param general.maxThreads
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+current_project adder
+save_bd_design
+close_project
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1

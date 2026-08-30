@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_vip_pkg" />
+            <top_module name="glbl" />
+            <top_module name="std" />
+            <top_module name="tb_top" />
+            <top_module name="xil_common_vip_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="10,431.732 ns"></ZoomStartTime>
+      <ZoomEndTime time="10,488.133 ns"></ZoomEndTime>
+      <Cursor1Time time="10,500.532 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="166"></NameColumnWidth>
+      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject type="logic" fp_name="/tb_top/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/start_txn">
+      <obj_property name="ElementShortName">start_txn</obj_property>
+      <obj_property name="ObjectShortName">start_txn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/txn_done">
+      <obj_property name="ElementShortName">txn_done</obj_property>
+      <obj_property name="ObjectShortName">txn_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/M_AXI_ARESETN">
+      <obj_property name="ElementShortName">M_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/mst_exec_state">
+      <obj_property name="ElementShortName">mst_exec_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mst_exec_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/state_write">
+      <obj_property name="ElementShortName">state_write[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state_write[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/state_read">
+      <obj_property name="ElementShortName">state_read[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state_read[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/M_AXI_AWVALID">
+      <obj_property name="ElementShortName">M_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/M_AXI_AWREADY">
+      <obj_property name="ElementShortName">M_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/M_AXI_ARREADY">
+      <obj_property name="ElementShortName">M_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARREADY</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/axi_arvalid">
+      <obj_property name="ElementShortName">axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/M_AXI_RDATA">
+      <obj_property name="ElementShortName">M_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/M_AXI_WDATA">
+      <obj_property name="ElementShortName">M_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/M_AXI_BREADY">
+      <obj_property name="ElementShortName">M_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BREADY</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/axi_wlast">
+      <obj_property name="ElementShortName">axi_wlast</obj_property>
+      <obj_property name="ObjectShortName">axi_wlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/M_AXI_WREADY">
+      <obj_property name="ElementShortName">M_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/UUT/tb_design_i/adder_0/inst/adder_master_full_v1_0_M00_AXI_inst/axi_wvalid">
+      <obj_property name="ElementShortName">axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_wvalid</obj_property>
+   </wvobject>
+</wave_config>

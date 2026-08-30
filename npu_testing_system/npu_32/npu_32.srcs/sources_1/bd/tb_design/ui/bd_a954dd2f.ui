@@ -1,0 +1,37 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.785763",
+   "Default View_TopLeft":"-232,-258",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_m00_axi_init_axi_txn_0 -pg 1 -lvl 0 -x -10 -y 110 -defaultsOSRD
+preplace port port-id_m00_axi_txn_done_0 -pg 1 -lvl 4 -x 1040 -y 80 -defaultsOSRD
+preplace port port-id_m00_axi_error_0 -pg 1 -lvl 4 -x 1040 -y 110 -defaultsOSRD
+preplace port port-id_clk_in1_0 -pg 1 -lvl 0 -x -10 -y 50 -defaultsOSRD
+preplace port port-id_reset_0 -pg 1 -lvl 0 -x -10 -y 20 -defaultsOSRD
+preplace port port-id_ext_reset_in_0 -pg 1 -lvl 0 -x -10 -y -90 -defaultsOSRD
+preplace inst adder_0 -pg 1 -lvl 2 -x 470 -y 90 -defaultsOSRD
+preplace inst axi_vip_0 -pg 1 -lvl 1 -x 150 -y -90 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 3 -x 870 -y -40 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 150 -y 40 -defaultsOSRD
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -x 470 -y -70 -defaultsOSRD
+preplace netloc adder_0_m00_axi_error 1 2 2 NJ 110 NJ
+preplace netloc adder_0_m00_axi_txn_done 1 2 2 680J 80 NJ
+preplace netloc clk_in1_0_1 1 0 1 N 50
+preplace netloc clk_wiz_clk_out1 1 0 3 60 130 270 170 670
+preplace netloc clk_wiz_locked 1 1 1 250 -30n
+preplace netloc ext_reset_in_0_1 1 0 2 20J 110 240J
+preplace netloc m00_axi_init_axi_txn_0_1 1 0 2 10J 120 290J
+preplace netloc reset_0_1 1 0 1 10 20n
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 3 50 140 280 180 660
+preplace netloc adder_0_M00_AXI 1 2 1 650 -60n
+preplace netloc axi_smc_M00_AXI 1 0 4 40 160 N 160 N 160 1010
+levelinfo -pg 1 -10 150 470 870 1040
+pagesize -pg 1 -db -bbox -sgen -230 -170 1230 200
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_board_cnt":"3"
+}

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Jul 30 14:13:17 2026
+# Process ID         : 660291
+# Current directory  : /home/jasper/npu/npu_testing_system/npu_32
+# Command line       : vivado -mode batch -source run_flow.tcl
+# Log file           : /home/jasper/npu/npu_testing_system/npu_32/vivado.log
+# Journal file       : /home/jasper/npu/npu_testing_system/npu_32/vivado.jou
+# Running On         : pc04
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : AMD Ryzen Threadripper PRO 5965WX 24-Cores
+# CPU Frequency      : 2705.202 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 48
+# Host memory        : 202424 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 211014 MB
+# Available Virtual  : 193913 MB
+#-----------------------------------------------------------
+source run_flow.tcl

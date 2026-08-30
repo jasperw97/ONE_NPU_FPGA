@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_2/sim/bd_5276_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_3/sim/bd_5276_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_4/sim/bd_5276_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_5/sim/bd_5276_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_6/sim/bd_5276_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_7/sim/bd_5276_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_8/sim/bd_5276_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_9/sim/bd_5276_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_10/sim/bd_5276_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_11/sim/bd_5276_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/jasper/npu_testing_system/adder/adder.ip_user_files/bd/tb_design/ip/tb_design_axi_smc_0/bd_0/ip/ip_12/sim/bd_5276_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_5276_m00e_0

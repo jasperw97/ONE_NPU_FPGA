@@ -1,0 +1,1757 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Jul 28 15:50:04 2026
+# Process ID         : 511544
+# Current directory  : /home/jasper/npu/npu_testing_system/npu_8x8
+# Command line       : vivado -mode batch -source run_flow.tcl
+# Log file           : /home/jasper/npu/npu_testing_system/npu_8x8/vivado.log
+# Journal file       : /home/jasper/npu/npu_testing_system/npu_8x8/vivado.jou
+# Running On         : pc04
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : AMD Ryzen Threadripper PRO 5965WX 24-Cores
+# CPU Frequency      : 3638.718 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 48
+# Host memory        : 202424 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 211014 MB
+# Available Virtual  : 208343 MB
+#-----------------------------------------------------------
+source run_flow.tcl
+# open_project npu_8x8.xpr
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/jasper/npu/npu_testing_system/ip_repo/adder_1_0'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/jasper/npu/example/dm_workspace/vivado_tutorial/c2cmbz_ddr4/c2cmbz_ddr4.srcs/sources_1/imports/c2cmbz_ddr4/Bob2_32GB_DDR4.csv'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/jasper/npu/npu_testing_system/full_dummy_ip/full_dummy_ip.srcs/sources_1/new/mock_npu.sv'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.0/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/emb-plus-vpr-4616/1.1/board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.1/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.7 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.7/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kd240_som/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kd240_som/1.1/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/v80/1.0/board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.5 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.5/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.4/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek385/1.0/board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek385/1.1/board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek385_2/1.0/board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.2/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.3/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vrk160/1.0/board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vrk160/1.1/board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.5 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.5/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/Xilinx/2025.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jasper/npu/npu_testing_system/ip_repo/adder_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jasper/npu/npu_testing_system/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jasper/npu/npu_testing_system/ip_repo/dummy_axi_full'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'tb_design.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+tb_design_adder_0_3
+
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/sources_1/bd/design_1/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_util_vector_logic_0_0
+# puts "INFO: Launching synthesis..."
+INFO: Launching synthesis...
+# reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/design_1_wrapper.dcp
+# launch_runs synth_1 -jobs 24
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+INFO: [Device 21-403] Loading part xcvu13p-fhgb2104-2-e
+INFO: [BD 5-943] Reserving offset range <0x0_0000_0000 [ 4G ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0_0000_0000 [ 4G ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0_0000_0000 [ 4G ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0_0000_0000 [ 4G ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+Wrote  : </home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_RLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_WLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_busy_o as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_done_o as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net start_pulse_o as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net state_o as it is marked for debug
+Verilog Output written to : /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_RLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_AWLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_WLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_m_axi_ARSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_busy_o as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net npu_axi_full_0_done_o as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net start_pulse_o as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net state_o as it is marked for debug
+Verilog Output written to : /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'bd_be6b' - hence not re-generating.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+Exporting to file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block npu_axi_full_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_ooc.xdc'
+Exporting to file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Hardware Definition File /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+Exporting to file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/design_1.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/design_1.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/design_1_sv.sveo
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_jtag_axi_0_0, cache-ID = 5b81e1005c57b0e1; cache size = 664.740 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_system_ila_0_0, cache-ID = 333cf7eb188ddefe; cache size = 664.741 MB.
+[Tue Jul 28 15:50:35 2026] Launched design_1_smartconnect_0_0_synth_1, design_1_npu_axi_full_0_0_synth_1...
+Run output will be captured here:
+design_1_smartconnect_0_0_synth_1: /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/design_1_smartconnect_0_0_synth_1/runme.log
+design_1_npu_axi_full_0_0_synth_1: /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/design_1_npu_axi_full_0_0_synth_1/runme.log
+[Tue Jul 28 15:50:35 2026] Launched synth_1...
+Run output will be captured here: /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3235.043 ; gain = 1587.363 ; free physical = 161225 ; free virtual = 196854
+# wait_on_run synth_1
+[Tue Jul 28 15:50:35 2026] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Jul 28 15:53:48 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jasper/npu/npu_testing_system/ip_repo/adder_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jasper/npu/npu_testing_system/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jasper/npu/npu_testing_system/ip_repo/dummy_axi_full'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/sources_1/bd/design_1/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_util_vector_logic_0_0
+Command: read_checkpoint -auto_incremental -incremental /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xcvu13p-fhgb2104-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu13p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu13p'
+INFO: [Device 21-403] Loading part xcvu13p-fhgb2104-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 514280
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3176.340 ; gain = 351.688 ; free physical = 158384 ; free virtual = 194442
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ddr4_0_2' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_ddr4_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ddr4_0_2' (0#1) [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_ddr4_0_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'c0_init_calib_complete' of module 'design_1_ddr4_0_2' is unconnected for instance 'ddr4_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:172]
+WARNING: [Synth 8-7071] port 'dbg_clk' of module 'design_1_ddr4_0_2' is unconnected for instance 'ddr4_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:172]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_bid' of module 'design_1_ddr4_0_2' is unconnected for instance 'ddr4_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:172]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rid' of module 'design_1_ddr4_0_2' is unconnected for instance 'ddr4_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:172]
+WARNING: [Synth 8-7071] port 'dbg_bus' of module 'design_1_ddr4_0_2' is unconnected for instance 'ddr4_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:172]
+WARNING: [Synth 8-7023] instance 'ddr4_0' of module 'design_1_ddr4_0_2' has 60 connections declared, but only 55 given [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:172]
+INFO: [Synth 8-6157] synthesizing module 'design_1_jtag_axi_0_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_jtag_axi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_jtag_axi_0_0' (0#1) [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_jtag_axi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_npu_axi_full_0_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_npu_axi_full_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_npu_axi_full_0_0' (0#1) [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_npu_axi_full_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ddr4_0_187M_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_rst_ddr4_0_187M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ddr4_0_187M_0' (0#1) [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_rst_ddr4_0_187M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ddr4_0_187M_0' is unconnected for instance 'rst_ddr4_0_187M' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:301]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ddr4_0_187M_0' is unconnected for instance 'rst_ddr4_0_187M' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:301]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ddr4_0_187M_0' is unconnected for instance 'rst_ddr4_0_187M' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:301]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ddr4_0_187M_0' is unconnected for instance 'rst_ddr4_0_187M' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:301]
+WARNING: [Synth 8-7023] instance 'rst_ddr4_0_187M' of module 'design_1_rst_ddr4_0_187M_0' has 10 connections declared, but only 6 given [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:301]
+INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_0' (0#1) [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_smartconnect_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:414]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (0#1) [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (0#1) [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_0_0' [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_0_0' (0#1) [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/.Xil/Vivado-514227-pc04/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'npu_axi_full_0'. This will prevent further optimization [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:268]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:449]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_0'. This will prevent further optimization [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:414]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'smartconnect_0'. This will prevent further optimization [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:308]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rst_ddr4_0_187M'. This will prevent further optimization [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:301]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'jtag_axi_0'. This will prevent further optimization [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:228]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ddr4_0'. This will prevent further optimization [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/synth/design_1.v:172]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3272.309 ; gain = 447.656 ; free physical = 158273 ; free virtual = 194332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3284.184 ; gain = 459.531 ; free physical = 158273 ; free virtual = 194332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3284.184 ; gain = 459.531 ; free physical = 158273 ; free virtual = 194332
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3284.184 ; gain = 0.000 ; free physical = 158273 ; free virtual = 194332
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/design_1_ddr4_0_2/design_1_ddr4_0_2_in_context.xdc] for cell 'design_1_i/ddr4_0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/design_1_ddr4_0_2/design_1_ddr4_0_2_in_context.xdc] for cell 'design_1_i/ddr4_0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0_in_context.xdc] for cell 'design_1_i/jtag_axi_0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0_in_context.xdc] for cell 'design_1_i/jtag_axi_0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/smartconnect_0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/smartconnect_0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_187M_0/design_1_rst_ddr4_0_187M_0/design_1_rst_ddr4_0_187M_0_in_context.xdc] for cell 'design_1_i/rst_ddr4_0_187M'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_187M_0/design_1_rst_ddr4_0_187M_0/design_1_rst_ddr4_0_187M_0_in_context.xdc] for cell 'design_1_i/rst_ddr4_0_187M'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_npu_axi_full_0_0/design_1_npu_axi_full_0_0/design_1_npu_axi_full_0_0_in_context.xdc] for cell 'design_1_i/npu_axi_full_0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_npu_axi_full_0_0/design_1_npu_axi_full_0_0/design_1_npu_axi_full_0_0_in_context.xdc] for cell 'design_1_i/npu_axi_full_0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3351.828 ; gain = 0.000 ; free physical = 158261 ; free virtual = 194321
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3351.863 ; gain = 0.000 ; free physical = 158356 ; free virtual = 194415
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3351.863 ; gain = 527.211 ; free physical = 158354 ; free virtual = 194414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu13p-fhgb2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3359.832 ; gain = 535.180 ; free physical = 158354 ; free virtual = 194414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3359.832 ; gain = 535.180 ; free physical = 158358 ; free virtual = 194418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3359.832 ; gain = 535.180 ; free physical = 158354 ; free virtual = 194415
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3359.832 ; gain = 535.180 ; free physical = 158353 ; free virtual = 194418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3806.188 ; gain = 981.535 ; free physical = 157949 ; free virtual = 194015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3807.188 ; gain = 982.535 ; free physical = 157949 ; free virtual = 194015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3819.203 ; gain = 994.551 ; free physical = 157941 ; free virtual = 194007
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 4013.016 ; gain = 1188.363 ; free physical = 157776 ; free virtual = 193841
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 4013.016 ; gain = 1188.363 ; free physical = 157776 ; free virtual = 193841
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 4013.016 ; gain = 1188.363 ; free physical = 157776 ; free virtual = 193841
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 4013.016 ; gain = 1188.363 ; free physical = 157776 ; free virtual = 193841
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 4013.016 ; gain = 1188.363 ; free physical = 157776 ; free virtual = 193841
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 4013.016 ; gain = 1188.363 ; free physical = 157776 ; free virtual = 193841
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |design_1_ddr4_0_2              |         1|
+|2     |design_1_jtag_axi_0_0          |         1|
+|3     |design_1_npu_axi_full_0_0      |         1|
+|4     |design_1_rst_ddr4_0_187M_0     |         1|
+|5     |design_1_smartconnect_0_0      |         1|
+|6     |design_1_system_ila_0_0        |         1|
+|7     |design_1_util_vector_logic_0_0 |         1|
+|8     |design_1_vio_0_0               |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |design_1_ddr4_0              |     1|
+|2     |design_1_jtag_axi_0          |     1|
+|3     |design_1_npu_axi_full_0      |     1|
+|4     |design_1_rst_ddr4_0_187M     |     1|
+|5     |design_1_smartconnect_0      |     1|
+|6     |design_1_system_ila_0        |     1|
+|7     |design_1_util_vector_logic_0 |     1|
+|8     |design_1_vio_0               |     1|
+|9     |IBUF                         |     1|
++------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 4013.016 ; gain = 1188.363 ; free physical = 157776 ; free virtual = 193841
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 4013.016 ; gain = 1120.684 ; free physical = 157777 ; free virtual = 193842
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 4013.016 ; gain = 1188.363 ; free physical = 157777 ; free virtual = 193842
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4013.016 ; gain = 0.000 ; free physical = 157953 ; free virtual = 194019
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4013.016 ; gain = 0.000 ; free physical = 157934 ; free virtual = 194000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+Synth Design complete | Checksum: 4301b22b
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 4013.016 ; gain = 2370.305 ; free physical = 157934 ; free virtual = 194000
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3117.180; main = 3117.180; forked = 281.170
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4346.055; main = 3973.484; forked = 994.223
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4013.016 ; gain = 0.000 ; free physical = 157934 ; free virtual = 194000
+INFO: [Common 17-1381] The checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 28 15:54:24 2026...
+[Tue Jul 28 15:54:25 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:07:35 ; elapsed = 00:03:50 . Memory (MB): peak = 3235.043 ; gain = 0.000 ; free physical = 160762 ; free virtual = 196820
+# set synth_status [get_property STATUS [get_runs synth_1]]
+# set synth_progress [get_property PROGRESS [get_runs synth_1]]
+# if {$synth_progress == "100%" && [string match "*Complete*" $synth_status]} {
+#     puts "SUCCESS: Synthesis completed! Launching implementation..."
+#     
+#     # 4. Reset and launch Implementation
+#     reset_run impl_1
+#     launch_runs impl_1 -jobs 24
+#     wait_on_run impl_1
+# } else {
+#     puts "ERROR: Synthesis failed with status: $synth_status. Aborting Implementation."
+# }
+SUCCESS: Synthesis completed! Launching implementation...
+[Tue Jul 28 15:54:27 2026] Launched impl_1...
+Run output will be captured here: /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/impl_1/runme.log
+[Tue Jul 28 15:54:27 2026] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Jul 28 15:54:28 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jasper/npu/npu_testing_system/ip_repo/adder_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jasper/npu/npu_testing_system/ip_repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jasper/npu/npu_testing_system/ip_repo/dummy_axi_full'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Command: link_design -top design_1_wrapper -part xcvu13p-fhgb2104-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcvu13p-fhgb2104-2-e
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/design_1_ddr4_0_2.dcp' for cell 'design_1_i/ddr4_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0.dcp' for cell 'design_1_i/jtag_axi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_npu_axi_full_0_0/design_1_npu_axi_full_0_0.dcp' for cell 'design_1_i/npu_axi_full_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_187M_0/design_1_rst_ddr4_0_187M_0.dcp' for cell 'design_1_i/rst_ddr4_0_187M'
+INFO: [Project 1-454] Reading design checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.dcp' for cell 'design_1_i/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.dcp' for cell 'design_1_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.dcp' for cell 'design_1_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.dcp' for cell 'design_1_i/vio_0'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3211.266 ; gain = 0.000 ; free physical = 158644 ; free virtual = 194703
+INFO: [Netlist 29-17] Analyzing 12377 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: design_1_i/ddr4_0 UUID: 5055ccf3-ab28-5f28-a888-99587c896c7c 
+INFO: [Chipscope 16-324] Core: design_1_i/jtag_axi_0 UUID: 53e5f1c3-10b9-52d3-bb10-986c3375587a 
+INFO: [Chipscope 16-324] Core: design_1_i/system_ila_0/inst/ila_lib UUID: cd4c83c8-23a6-596d-99ad-09be1335c6b0 
+INFO: [Chipscope 16-324] Core: design_1_i/vio_0 UUID: 01a4b594-7c44-5fa6-bd66-f70f5f031273 
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:4]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:4]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:4]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:7]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:7]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-1' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:7]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:10]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:10]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:10]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:13]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:13]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPIP-2' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:13]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-1' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:16]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-1' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:16]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-1' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:16]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-2' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:19]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-2' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:19]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-2' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:19]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:22]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:22]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:22]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:25]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:25]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:25]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:28]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:28]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-3' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:28]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:31]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:31]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:31]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:34]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:34]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:34]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:37]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:37]
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'DPOP-4' object list specifies likely unusable hierarchical instance 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1'. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc:37]
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_0/bd_be6b_microblaze_I_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_1/bd_be6b_rst_0_0_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_1/bd_be6b_rst_0_0_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_2/bd_be6b_ilmb_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_2/bd_be6b_ilmb_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_3/bd_be6b_dlmb_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_3/bd_be6b_dlmb_0.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_10/bd_be6b_iomodule_0_0_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/bd_0/ip/ip_10/bd_be6b_iomodule_0_0_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/ip_0/design_1_ddr4_0_2_microblaze_mcs_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/ip_0/design_1_ddr4_0_2_microblaze_mcs_board.xdc] for cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/par/design_1_ddr4_0_2.xdc] for cell 'design_1_i/ddr4_0/inst'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/par/design_1_ddr4_0_2.xdc] for cell 'design_1_i/ddr4_0/inst'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'design_1_i/jtag_axi_0/inst'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/constraints/jtag_axi.xdc] for cell 'design_1_i/jtag_axi_0/inst'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc] for cell 'design_1_i/smartconnect_0/inst'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc] for cell 'design_1_i/smartconnect_0/inst'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_187M_0/design_1_rst_ddr4_0_187M_0_board.xdc] for cell 'design_1_i/rst_ddr4_0_187M/U0'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_rst_ddr4_0_187M_0/design_1_rst_ddr4_0_187M_0_board.xdc] for cell 'design_1_i/rst_ddr4_0_187M/U0'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc:31]
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc:108]
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/constrs_1/new/pin.xdc]
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/design_1_ddr4_0_2_board.xdc] for cell 'design_1_i/ddr4_0/inst'
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/design_1_ddr4_0_2_board.xdc] for cell 'design_1_i/ddr4_0/inst'
+INFO: [Project 1-1714] 85 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_2/sw/calibration_0/Debug/calibration_ddr.elf 
+INFO: [Project 1-1687] 2 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5261.523 ; gain = 0.000 ; free physical = 156754 ; free virtual = 192814
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5866 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 292 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 844 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 8 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 72 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 2 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 213 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 273 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2056 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 20 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 2048 instances
+
+26 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:02:05 ; elapsed = 00:01:13 . Memory (MB): peak = 5261.559 ; gain = 3494.770 ; free physical = 156754 ; free virtual = 192814
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu13p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu13p'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 5269.527 ; gain = 0.000 ; free physical = 156753 ; free virtual = 192812
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 226c6cdb5
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:12 . Memory (MB): peak = 5269.527 ; gain = 0.000 ; free physical = 156742 ; free virtual = 192803
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize MIG Cores
+INFO: [Mig 66-454] Using cached IP synthesis design for IP xilinx.com:ip:ddr4_phy:2.2, cache-ID = 677f106afe71499c.
+Done building netlist checker database: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 5591.988 ; gain = 0.000 ; free physical = 156482 ; free virtual = 192569
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5591.988 ; gain = 0.000 ; free physical = 156482 ; free virtual = 192569
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 5591.988 ; gain = 0.000 ; free physical = 156520 ; free virtual = 192581
+Phase 1.1.1 Generate And Synthesize MIG Cores | Checksum: 26d86e2fc
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 5591.988 ; gain = 100.648 ; free physical = 156520 ; free virtual = 192580
+
+Phase 1.1.2 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_0 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 5c1ff56c915db90b.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:ila:6.2, cache-ID = 9d60eeb454e73aaa.
+Done building netlist checker database: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 5592.023 ; gain = 0.000 ; free physical = 156386 ; free virtual = 192489
+Done building netlist checker database: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 5592.023 ; gain = 0.000 ; free physical = 156401 ; free virtual = 192503
+get_clocks: Time (s): cpu = 00:01:01 ; elapsed = 00:00:15 . Memory (MB): peak = 5799.051 ; gain = 207.027 ; free physical = 156231 ; free virtual = 192334
+Netlist sorting complete. Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.21 . Memory (MB): peak = 5799.051 ; gain = 0.000 ; free physical = 156233 ; free virtual = 192336
+Phase 1.1.2 Generate And Synthesize Debug Cores | Checksum: 167356101
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:01:04 . Memory (MB): peak = 5799.051 ; gain = 307.711 ; free physical = 156234 ; free virtual = 192337
+Phase 1.1 Core Generation And Design Setup | Checksum: 167356101
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:01:04 . Memory (MB): peak = 5799.051 ; gain = 307.711 ; free physical = 156234 ; free virtual = 192337
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 167356101
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:01:04 . Memory (MB): peak = 5799.051 ; gain = 307.711 ; free physical = 156234 ; free virtual = 192337
+Phase 1 Initialization | Checksum: 167356101
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:01:04 . Memory (MB): peak = 5799.051 ; gain = 307.711 ; free physical = 156234 ; free virtual = 192337
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 167356101
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:01:04 . Memory (MB): peak = 5895.051 ; gain = 403.711 ; free physical = 156140 ; free virtual = 192243
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 167356101
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:01:10 . Memory (MB): peak = 5895.051 ; gain = 403.711 ; free physical = 156149 ; free virtual = 192252
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 167356101
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:01:10 . Memory (MB): peak = 5895.051 ; gain = 403.711 ; free physical = 156145 ; free virtual = 192248
+Phase 2 Timer Update And Timing Data Collection | Checksum: 167356101
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:01:10 . Memory (MB): peak = 5895.051 ; gain = 403.711 ; free physical = 156145 ; free virtual = 192248
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 18 inverters resulting in an inversion of 232 pins
+INFO: [Opt 31-138] Pushed 69 inverter(s) to 48548 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 2217e4ad9
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:15 . Memory (MB): peak = 5895.051 ; gain = 403.711 ; free physical = 156149 ; free virtual = 192252
+Retarget | Checksum: 2217e4ad9
+INFO: [Opt 31-389] Phase Retarget created 579 cells and removed 2125 cells
+INFO: [Opt 31-1021] In phase Retarget, 169 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 19 inverter(s) to 31 load pin(s).
+Phase 4 Constant propagation | Checksum: 219f95a92
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:17 . Memory (MB): peak = 5895.051 ; gain = 403.711 ; free physical = 156150 ; free virtual = 192253
+Constant propagation | Checksum: 219f95a92
+INFO: [Opt 31-389] Phase Constant propagation created 330 cells and removed 1753 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 130 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.1 . Memory (MB): peak = 5895.051 ; gain = 0.000 ; free physical = 156150 ; free virtual = 192253
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 5895.051 ; gain = 0.000 ; free physical = 156151 ; free virtual = 192254
+Phase 5 Sweep | Checksum: 1e5d7580c
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:24 . Memory (MB): peak = 5895.051 ; gain = 403.711 ; free physical = 156153 ; free virtual = 192256
+Sweep | Checksum: 1e5d7580c
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 845 cells
+INFO: [Opt 31-1021] In phase Sweep, 4634 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+INFO: [Opt 31-129] Inserted BUFG to drive high-fanout reset|set|enable net. BUFG cell: design_1_i/rst_ddr4_0_187M/U0/peripheral_aresetn[0]_BUFG_inst, Net: design_1_i/rst_ddr4_0_187M/U0/peripheral_aresetn[0]
+Phase 6 BUFG optimization | Checksum: 282451e66
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:27 . Memory (MB): peak = 5927.066 ; gain = 435.727 ; free physical = 156155 ; free virtual = 192258
+BUFG optimization | Checksum: 282451e66
+INFO: [Opt 31-662] Phase BUFG optimization created 3 cells of which 2 are BUFGs and removed 4 cells.
+INFO: [Opt 31-1021] In phase BUFG optimization, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 282451e66
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:28 . Memory (MB): peak = 5927.066 ; gain = 435.727 ; free physical = 156156 ; free virtual = 192259
+Shift Register Optimization | Checksum: 282451e66
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 1 pins
+Phase 8 Post Processing Netlist | Checksum: 1d8cfe816
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:29 . Memory (MB): peak = 5927.066 ; gain = 435.727 ; free physical = 156156 ; free virtual = 192259
+Post Processing Netlist | Checksum: 1d8cfe816
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 2 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 248 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1e6c41dc9
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:36 . Memory (MB): peak = 5927.066 ; gain = 435.727 ; free physical = 156161 ; free virtual = 192264
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.3 . Memory (MB): peak = 5927.066 ; gain = 0.000 ; free physical = 156161 ; free virtual = 192264
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1e6c41dc9
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:37 . Memory (MB): peak = 5927.066 ; gain = 435.727 ; free physical = 156161 ; free virtual = 192264
+Phase 9 Finalization | Checksum: 1e6c41dc9
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:37 . Memory (MB): peak = 5927.066 ; gain = 435.727 ; free physical = 156161 ; free virtual = 192264
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             579  |            2125  |                                            169  |
+|  Constant propagation         |             330  |            1753  |                                            130  |
+|  Sweep                        |               0  |             845  |                                           4634  |
+|  BUFG optimization            |               3  |               4  |                                              2  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               2  |                                            248  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1e6c41dc9
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:37 . Memory (MB): peak = 5927.066 ; gain = 435.727 ; free physical = 156161 ; free virtual = 192264
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for xiphy_riu_or
+INFO: [Power 33-23] Power model is not available for genVref.u_hpio_vref
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 358 BRAM(s) out of a total of 572 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 188 WE to EN ports
+Number of BRAM Ports augmented: 356 newly gated: 188 Total Ports: 1144
+Ending PowerOpt Patch Enables Task | Checksum: 1b1e72e2a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154498 ; free virtual = 190602
+Ending Power Optimization Task | Checksum: 1b1e72e2a
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:00:40 . Memory (MB): peak = 7727.043 ; gain = 1799.977 ; free physical = 154498 ; free virtual = 190602
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1b1e72e2a
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154498 ; free virtual = 190602
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/constraints/design_1_jtag_axi_0_0_impl.xdc] from IP /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.srcs/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/design_1_jtag_axi_0_0.xci
+Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/constraints/design_1_jtag_axi_0_0_impl.xdc] for cell 'design_1_i/jtag_axi_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/constraints/design_1_jtag_axi_0_0_impl.xdc:69]
+all_fanout: Time (s): cpu = 00:00:53 ; elapsed = 00:00:12 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154522 ; free virtual = 190625
+Finished Parsing XDC File [/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.gen/sources_1/bd/design_1/ip/design_1_jtag_axi_0_0/constraints/design_1_jtag_axi_0_0_impl.xdc] for cell 'design_1_i/jtag_axi_0/inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154522 ; free virtual = 190625
+INFO: [Common 17-83] Releasing license: Implementation
+85 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:06:50 ; elapsed = 00:02:44 . Memory (MB): peak = 7727.043 ; gain = 2465.484 ; free physical = 154522 ; free virtual = 190625
+INFO: [Vivado 12-24828] Executing command : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154523 ; free virtual = 190627
+generate_parallel_reports: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154523 ; free virtual = 190627
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154520 ; free virtual = 190627
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154520 ; free virtual = 190627
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.37 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154485 ; free virtual = 190626
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154452 ; free virtual = 190624
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154452 ; free virtual = 190624
+Wrote Device Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154450 ; free virtual = 190625
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154449 ; free virtual = 190625
+INFO: [Common 17-1381] The checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 7727.043 ; gain = 0.000 ; free physical = 154462 ; free virtual = 190627
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu13p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu13p'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 7823.090 ; gain = 0.000 ; free physical = 154431 ; free virtual = 190596
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 17cf628f6
+
+Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.21 . Memory (MB): peak = 7823.090 ; gain = 0.000 ; free physical = 154431 ; free virtual = 190596
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 7823.090 ; gain = 0.000 ; free physical = 154434 ; free virtual = 190599
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1283a006a
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:30 . Memory (MB): peak = 7823.090 ; gain = 0.000 ; free physical = 154381 ; free virtual = 190546
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1b358fb55
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:01:24 . Memory (MB): peak = 8445.199 ; gain = 622.109 ; free physical = 153560 ; free virtual = 189725
+
+Phase 1.4 Constrain Clocks/Macros
+MIG CONSTR ADDED 1
+MIG Constraint : added 1
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1b358fb55
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:01:25 . Memory (MB): peak = 8445.199 ; gain = 622.109 ; free physical = 153560 ; free virtual = 189725
+Phase 1 Placer Initialization | Checksum: 1b358fb55
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:25 . Memory (MB): peak = 8445.199 ; gain = 622.109 ; free physical = 153560 ; free virtual = 189725
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 18625444c
+
+Time (s): cpu = 00:04:50 ; elapsed = 00:02:15 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153558 ; free virtual = 189723
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1a01c6c80
+
+Time (s): cpu = 00:04:59 ; elapsed = 00:02:24 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153558 ; free virtual = 189723
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: f1224dfe
+
+Time (s): cpu = 00:05:01 ; elapsed = 00:02:26 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153558 ; free virtual = 189723
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: f1224dfe
+
+Time (s): cpu = 00:05:35 ; elapsed = 00:02:35 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153686 ; free virtual = 189853
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: 1c957757f
+
+Time (s): cpu = 00:05:41 ; elapsed = 00:02:40 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153693 ; free virtual = 189859
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 17daef484
+
+Time (s): cpu = 00:06:02 ; elapsed = 00:02:49 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153692 ; free virtual = 189859
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 17daef484
+
+Time (s): cpu = 00:06:03 ; elapsed = 00:02:50 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153692 ; free virtual = 189859
+Phase 2.1.1 Partition Driven Placement | Checksum: 17daef484
+
+Time (s): cpu = 00:06:04 ; elapsed = 00:02:50 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153692 ; free virtual = 189859
+Phase 2.1 Floorplanning | Checksum: 216aeb9a6
+
+Time (s): cpu = 00:06:05 ; elapsed = 00:02:50 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153692 ; free virtual = 189859
+
+Phase 2.2 Physical Synthesis After Floorplan
+INFO: [Physopt 32-46] Identified 20 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 8525.238 ; gain = 0.000 ; free physical = 153692 ; free virtual = 189859
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                         |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  PSIP Post Floorplan SLR Replication  |            0  |              0  |                     0  |          12  |           1  |  00:00:02  |
+|  Total                                |            0  |              0  |                     0  |          12  |           1  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis After Floorplan | Checksum: 216aeb9a6
+
+Time (s): cpu = 00:06:08 ; elapsed = 00:02:53 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153692 ; free virtual = 189859
+
+Phase 2.3 Update Timing before SLR Path Opt
+Phase 2.3 Update Timing before SLR Path Opt | Checksum: 216aeb9a6
+
+Time (s): cpu = 00:06:09 ; elapsed = 00:02:53 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153692 ; free virtual = 189859
+
+Phase 2.4 Post-Processing in Floorplanning
+Phase 2.4 Post-Processing in Floorplanning | Checksum: 1d66d780c
+
+Time (s): cpu = 00:06:11 ; elapsed = 00:02:54 . Memory (MB): peak = 8525.238 ; gain = 702.148 ; free physical = 153692 ; free virtual = 189859
+
+Phase 2.5 Global Place Phase1
+Phase 2.5 Global Place Phase1 | Checksum: 1a97faf3b
+
+Time (s): cpu = 00:13:55 ; elapsed = 00:06:04 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153144 ; free virtual = 189328
+
+Phase 2.6 Global Place Phase2
+
+Phase 2.6.1 UpdateTiming Before Physical Synthesis
+Phase 2.6.1 UpdateTiming Before Physical Synthesis | Checksum: 147ce162f
+
+Time (s): cpu = 00:14:28 ; elapsed = 00:06:12 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153144 ; free virtual = 189328
+
+Phase 2.6.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 149 LUTNM shape to break, 3975 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 56, two critical 93, total 149, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 1964 nets or LUTs. Breaked 149 LUTs, combined 1815 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 346 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-1483] Netlist edit fails for net design_1_i/ddr4_0/inst/u_ddr_axi/axi_w_channel_0/wready_reg_rep__4_n_0 and pin design_1_i/smartconnect_0/inst/m00_exit_pipeline/m00_exit/inst/w_reg/m_vector_i[1536]_i_1/I0. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+INFO: [Physopt 32-1483] Netlist edit fails for net design_1_i/ddr4_0/inst/u_ddr_axi/axi_w_channel_0/wready_reg_rep__4_n_0 and pin design_1_i/smartconnect_0/inst/m00_exit_pipeline/m00_exit/inst/w_reg/state[s_ready_i]_i_1__0/I2. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+INFO: [Physopt 32-661] Optimized 136 nets.  Re-placed 1371 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 136 nets or cells. Created 0 new cell, deleted 63 existing cells and moved 1371 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.7 . Memory (MB): peak = 9105.551 ; gain = 0.000 ; free physical = 153144 ; free virtual = 189328
+INFO: [Physopt 32-1408] Pass 1. Identified 2 candidate nets for high-fanout optimization.
+INFO: [Physopt 32-81] Processed net design_1_i/npu_axi_full_0/inst/npu_inst/u_sa/weight_addr_x_r[0]. Replicated 36 times.
+INFO: [Physopt 32-81] Processed net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_ddr_cal_addr_decode/u_ddr_cal_cplx/cplx_cal. Replicated 8 times.
+INFO: [Physopt 32-232] Optimized 2 nets. Created 44 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 44 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 9105.551 ; gain = 0.000 ; free physical = 153144 ; free virtual = 189328
+INFO: [Physopt 32-457] Pass 1. Identified 37 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[2].u_mul_in2_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[1].u_mul_in2_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[2].u_mul_in2_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[3].u_mul_in2_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[3].u_mul_in2_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[7].u_mul_in1_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[6].u_mul_in2_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[7].u_mul_in2_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[5].u_mul_in2_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[7].u_mul_in1_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[7].u_mul_in2_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[6].u_mul_in2_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[4].u_mul_in2_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[1].u_mul_in2_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[3].u_mul_in1_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[4].u_mul_in2_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[5].u_mul_in2_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[0].u_mul_in2_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/WEIGHT_REQUANT[2].u_weight_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[6].u_mul_in1_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[3].u_mul_in1_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/WEIGHT_REQUANT[3].u_weight_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/DATA_REQUANT[2].u_data_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/WEIGHT_REQUANT[6].u_weight_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[5].u_mul_in1_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN2_REQUANT[0].u_mul_in2_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[2].u_mul_in1_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[1].u_mul_in1_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/WEIGHT_REQUANT[6].u_weight_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[6].u_mul_in1_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[2].u_mul_in1_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[4].u_mul_in1_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/WEIGHT_REQUANT[7].u_weight_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/WEIGHT_REQUANT[2].u_weight_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/DATA_REQUANT[2].u_data_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/MUL_IN1_REQUANT[5].u_mul_in1_requant/U_mult_pipe/pipe_reg[0]. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/npu_axi_full_0/inst/npu_inst/WEIGHT_REQUANT[4].u_weight_requant/U_mult_pipe/pipe_reg[1]. 17 registers were pushed out.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 37 nets or cells. Created 629 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.25 . Memory (MB): peak = 9105.551 ; gain = 0.000 ; free physical = 153144 ; free virtual = 189329
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 9105.551 ; gain = 0.000 ; free physical = 153144 ; free virtual = 189329
+INFO: [Physopt 32-46] Identified 3 candidate nets for critical-cell optimization.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ODT_dly_reg[1][15]_0[2]_repN and pin design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[8].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[5].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[7]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ODT_dly_reg[1][15]_0[2]_repN and pin design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[8].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[5].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[5]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+INFO: [Physopt 32-782] Net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ODT_dly_reg[1][15]_0[2] was not replicated
+INFO: [Physopt 32-780] Instance design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR_dly_reg[1][135]_0[62]_repN and pin design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[9].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[2].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[2]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR_dly_reg[1][135]_0[62]_repN and pin design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[9].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[2].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[1]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+INFO: [Physopt 32-782] Net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR_dly_reg[1][135]_0[62] was not replicated
+INFO: [Physopt 32-780] Instance design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR_dly_reg[1][135]_0[64]_repN and pin design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[9].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[2].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[5]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+WARNING: [Netlist 29-47] Cannot modify dont-touch cell 'design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy'.
+INFO: [Physopt 32-1483] Netlist edit fails for net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR_dly_reg[1][135]_0[64]_repN and pin design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[9].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_BITSLICE_LOWER[2].GEN_RXTX_BITSLICE_EN.u_xiphy_bitslice_lower/xiphy_rxtx_bitslice/D[6]. Please check constraints such as DONT_TOUCH on the instance, net and hierarchical instance between driver and loads.
+INFO: [Physopt 32-782] Net design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/mcal_ADR_dly_reg[1][135]_0[64] was not replicated
+INFO: [Physopt 32-780] Instance design_1_i/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy has DONT_TOUCH and is preventing optimization
+Resolution: Removing DONT_TOUCH attributes may enable additional optimization
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 9105.551 ; gain = 0.000 ; free physical = 153144 ; free virtual = 189329
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          149  |           1815  |                  1964  |           0  |           1  |  00:00:03  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |             63  |                   136  |           0  |           1  |  00:00:17  |
+|  Very High Fanout                                 |           44  |              0  |                     2  |           0  |           1  |  00:00:03  |
+|  DSP Register                                     |          629  |              0  |                    37  |           0  |           1  |  00:00:07  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           3  |           1  |  00:00:00  |
+|  Total                                            |          822  |           1878  |                  2139  |           3  |          11  |  00:00:31  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.6.2 Physical Synthesis In Placer | Checksum: ef824840
+
+Time (s): cpu = 00:15:27 ; elapsed = 00:06:57 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153144 ; free virtual = 189329
+Phase 2.6 Global Place Phase2 | Checksum: 1f87fcd49
+
+Time (s): cpu = 00:16:54 ; elapsed = 00:07:25 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153143 ; free virtual = 189327
+Phase 2 Global Placement | Checksum: 1f87fcd49
+
+Time (s): cpu = 00:16:55 ; elapsed = 00:07:26 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153143 ; free virtual = 189327
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1960a585d
+
+Time (s): cpu = 00:17:46 ; elapsed = 00:07:42 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153296 ; free virtual = 189480
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: c667bb25
+
+Time (s): cpu = 00:18:27 ; elapsed = 00:08:00 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153296 ; free virtual = 189480
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 153c3db74
+
+Time (s): cpu = 00:20:20 ; elapsed = 00:08:37 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153356 ; free virtual = 189541
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: ef8d6c6b
+
+Time (s): cpu = 00:20:33 ; elapsed = 00:08:46 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153356 ; free virtual = 189541
+Phase 3.3.2 Slice Area Swap | Checksum: 14733ef91
+
+Time (s): cpu = 00:20:39 ; elapsed = 00:08:51 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153356 ; free virtual = 189541
+Phase 3.3 Small Shape DP | Checksum: 53e0d98c
+
+Time (s): cpu = 00:21:06 ; elapsed = 00:08:59 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153356 ; free virtual = 189541
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: b7b61e93
+
+Time (s): cpu = 00:21:14 ; elapsed = 00:09:05 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153356 ; free virtual = 189541
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1b4ae17fe
+
+Time (s): cpu = 00:21:19 ; elapsed = 00:09:08 . Memory (MB): peak = 9105.551 ; gain = 1282.461 ; free physical = 153356 ; free virtual = 189541
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 200f6a396
+
+Time (s): cpu = 00:23:14 ; elapsed = 00:09:36 . Memory (MB): peak = 9859.012 ; gain = 2035.922 ; free physical = 152535 ; free virtual = 188719
+Phase 3 Detail Placement | Checksum: 200f6a396
+
+Time (s): cpu = 00:23:16 ; elapsed = 00:09:36 . Memory (MB): peak = 9859.012 ; gain = 2035.922 ; free physical = 152535 ; free virtual = 188719
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 21aa562ec
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.055 | TNS=-0.284 |
+Phase 1 Physical Synthesis Initialization | Checksum: 139331234
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:05 . Memory (MB): peak = 9940.340 ; gain = 0.000 ; free physical = 152430 ; free virtual = 188615
+INFO: [Place 46-35] Processed net design_1_i/npu_axi_full_0/inst/npu_inst/setup_r, inserted BUFG to drive 1029 loads.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 2c32bda87
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:07 . Memory (MB): peak = 9940.340 ; gain = 0.000 ; free physical = 152430 ; free virtual = 188615
+Phase 4.1.1.1 BUFG Insertion | Checksum: 265803d9b
+
+Time (s): cpu = 00:26:56 ; elapsed = 00:10:39 . Memory (MB): peak = 9940.340 ; gain = 2117.250 ; free physical = 152430 ; free virtual = 188615
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-63] BUFG replication identified 0 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, moved BUFGs: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 0, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: 265803d9b
+
+Time (s): cpu = 00:26:59 ; elapsed = 00:10:40 . Memory (MB): peak = 9940.340 ; gain = 2117.250 ; free physical = 152430 ; free virtual = 188615
+
+Phase 4.1.1.3 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.140. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Post Placement Timing Optimization | Checksum: 23ceedadd
+
+Time (s): cpu = 00:28:10 ; elapsed = 00:11:26 . Memory (MB): peak = 9940.340 ; gain = 2117.250 ; free physical = 152436 ; free virtual = 188621
+
+Phase 4.1.1.4 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=0.140. For the most accurate timing information please run report_timing.
+Phase 4.1.1.4 Replication | Checksum: 23ceedadd
+
+Time (s): cpu = 00:28:14 ; elapsed = 00:11:28 . Memory (MB): peak = 9940.340 ; gain = 2117.250 ; free physical = 152428 ; free virtual = 188613
+
+Time (s): cpu = 00:28:14 ; elapsed = 00:11:28 . Memory (MB): peak = 9940.340 ; gain = 2117.250 ; free physical = 152428 ; free virtual = 188613
+Phase 4.1 Post Commit Optimization | Checksum: 23ceedadd
+
+Time (s): cpu = 00:28:17 ; elapsed = 00:11:28 . Memory (MB): peak = 9940.340 ; gain = 2117.250 ; free physical = 152428 ; free virtual = 188613
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.1 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152429 ; free virtual = 188613
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 22efae988
+
+Time (s): cpu = 00:29:17 ; elapsed = 00:12:04 . Memory (MB): peak = 9972.355 ; gain = 2149.266 ; free physical = 152429 ; free virtual = 188613
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                2x2|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+SLR0:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                2x2|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+SLR1:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+SLR2:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+SLR3:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 22efae988
+
+Time (s): cpu = 00:29:19 ; elapsed = 00:12:04 . Memory (MB): peak = 9972.355 ; gain = 2149.266 ; free physical = 152429 ; free virtual = 188613
+Phase 4.3 Placer Reporting | Checksum: 22efae988
+
+Time (s): cpu = 00:29:21 ; elapsed = 00:12:05 . Memory (MB): peak = 9972.355 ; gain = 2149.266 ; free physical = 152429 ; free virtual = 188614
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152429 ; free virtual = 188614
+
+Time (s): cpu = 00:29:21 ; elapsed = 00:12:05 . Memory (MB): peak = 9972.355 ; gain = 2149.266 ; free physical = 152429 ; free virtual = 188614
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2352320ff
+
+Time (s): cpu = 00:29:24 ; elapsed = 00:12:05 . Memory (MB): peak = 9972.355 ; gain = 2149.266 ; free physical = 152429 ; free virtual = 188614
+Ending Placer Task | Checksum: 1475fbfe5
+
+Time (s): cpu = 00:29:26 ; elapsed = 00:12:06 . Memory (MB): peak = 9972.355 ; gain = 2149.266 ; free physical = 152429 ; free virtual = 188614
+193 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:29:44 ; elapsed = 00:12:16 . Memory (MB): peak = 9972.355 ; gain = 2245.312 ; free physical = 152429 ; free virtual = 188614
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.8 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152342 ; free virtual = 188527
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.94 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152396 ; free virtual = 188582
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152386 ; free virtual = 188573
+generate_parallel_reports: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152387 ; free virtual = 188574
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.55 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152325 ; free virtual = 188573
+Wrote PlaceDB: Time (s): cpu = 00:00:22 ; elapsed = 00:00:07 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151998 ; free virtual = 188554
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151998 ; free virtual = 188554
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:01 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151999 ; free virtual = 188556
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.28 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151975 ; free virtual = 188562
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151968 ; free virtual = 188556
+Write Physdb Complete: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151968 ; free virtual = 188556
+INFO: [Common 17-1381] The checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152317 ; free virtual = 188590
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu13p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu13p'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:28 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152346 ; free virtual = 188618
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.140 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+204 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:40 ; elapsed = 00:00:31 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152346 ; free virtual = 188618
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.47 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152284 ; free virtual = 188615
+Wrote PlaceDB: Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151953 ; free virtual = 188594
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151953 ; free virtual = 188594
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.96 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151949 ; free virtual = 188591
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.27 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151914 ; free virtual = 188585
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151914 ; free virtual = 188587
+Write Physdb Complete: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 151906 ; free virtual = 188579
+INFO: [Common 17-1381] The checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:14 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152230 ; free virtual = 188588
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu13p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu13p'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 3a354e24 ConstDB: 0 ShapeSum: e66cd43f RouteDB: 26bd9d82
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152228 ; free virtual = 188586
+Post Restoration Checksum: NetGraph: 1e0bb9b1 | NumContArr: bb3caa8b | Constraints: a43fa609 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2403104e2
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:17 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152242 ; free virtual = 188600
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2403104e2
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:00:18 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152242 ; free virtual = 188600
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2403104e2
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:00:18 . Memory (MB): peak = 9972.355 ; gain = 0.000 ; free physical = 152242 ; free virtual = 188600
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 29137dbda
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:34 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152244 ; free virtual = 188602
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1d740792a
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:00:48 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152244 ; free virtual = 188602
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.306  | TNS=0.000  | WHS=-0.155 | THS=-34.486|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 263159986
+
+Time (s): cpu = 00:05:30 ; elapsed = 00:01:21 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152246 ; free virtual = 188603
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.306  | TNS=0.000  | WHS=-0.184 | THS=-42.443|
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 2c3ff2324
+
+Time (s): cpu = 00:05:30 ; elapsed = 00:01:22 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152246 ; free virtual = 188604
+
+Phase 2.6 Soft Constraint Pins - Fast Budgeting
+Phase 2.6 Soft Constraint Pins - Fast Budgeting | Checksum: 2c3ff2324
+
+Time (s): cpu = 00:05:35 ; elapsed = 00:01:23 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152246 ; free virtual = 188604
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000106296 %
+  Global Horizontal Routing Utilization  = 0.000346452 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 243955
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 209672
+  Number of Partially Routed Nets     = 34283
+  Number of Node Overlaps             = 5
+
+Phase 2 Router Initialization | Checksum: 1dcedccdc
+
+Time (s): cpu = 00:05:47 ; elapsed = 00:01:26 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+
+Phase 3 Global Routing
+
+Phase 3.1 SLL Assignment
+Number SLLs per Column: 1440
+Estimated SLL Demand Per Column: 
+  SLR [2-3]        0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     1 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)  Demand:     1 Available: 23040 Utilization(%): 0.00
+  SLR [1-2]        0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     1 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)  Demand:     1 Available: 23040 Utilization(%): 0.00
+  SLR [0-1]       30 (  2%)    38 (  3%)    50 (  3%)    76 (  5%)    74 (  5%)    52 (  4%)    55 (  4%)    96 (  7%)   103 (  7%)    84 (  6%)    38 (  3%)     7 (  0%)    29 (  2%)     5 (  0%)    13 (  1%)    12 (  1%)  Demand:   762 Available: 23040 Utilization(%): 3.31
+Phase 3.1 SLL Assignment | Checksum: 172ef1d8e
+
+Time (s): cpu = 00:05:50 ; elapsed = 00:01:28 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+Phase 3 Global Routing | Checksum: 172ef1d8e
+
+Time (s): cpu = 00:05:50 ; elapsed = 00:01:28 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 207799c40
+
+Time (s): cpu = 00:06:48 ; elapsed = 00:01:54 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152249 ; free virtual = 188607
+Phase 4 Initial Routing | Checksum: 1b2567c64
+
+Time (s): cpu = 00:06:52 ; elapsed = 00:01:55 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152249 ; free virtual = 188607
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 46070
+INFO: [Route 35-443] CLB routing congestion detected. Several CLBs have high routing utilization, which can impact timing closure. Congested CLBs and Nets are dumped in: iter_8_CongestedCLBsAndNets.txt
+ Number of Nodes with overlaps = 4528
+ Number of Nodes with overlaps = 591
+ Number of Nodes with overlaps = 150
+ Number of Nodes with overlaps = 66
+INFO: [Route 35-443] CLB routing congestion detected. Several CLBs have high routing utilization, which can impact timing closure. Congested CLBs and Nets are dumped in: iter_28_CongestedCLBsAndNets.txt
+ Number of Nodes with overlaps = 41
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.134 | TNS=-0.232 | WHS=-0.022 | THS=-0.205 |
+
+Phase 5.1 Global Iteration 0 | Checksum: 265ed7e14
+
+Time (s): cpu = 00:21:34 ; elapsed = 00:10:51 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152235 ; free virtual = 188593
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.017  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 242d03f2f
+
+Time (s): cpu = 00:22:29 ; elapsed = 00:11:10 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152245 ; free virtual = 188603
+
+Phase 5.3 Global Iteration 2
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.017  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.3 Global Iteration 2 | Checksum: 24c00857b
+
+Time (s): cpu = 00:22:54 ; elapsed = 00:11:22 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152248 ; free virtual = 188607
+Phase 5 Rip-up And Reroute | Checksum: 24c00857b
+
+Time (s): cpu = 00:22:55 ; elapsed = 00:11:22 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152248 ; free virtual = 188607
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.017  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.017  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Delay CleanUp | Checksum: 1ceb9ff48
+
+Time (s): cpu = 00:23:52 ; elapsed = 00:11:34 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152248 ; free virtual = 188607
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 1ceb9ff48
+
+Time (s): cpu = 00:23:52 ; elapsed = 00:11:35 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152248 ; free virtual = 188607
+Phase 6 Delay and Skew Optimization | Checksum: 1ceb9ff48
+
+Time (s): cpu = 00:23:53 ; elapsed = 00:11:35 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152248 ; free virtual = 188607
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.017  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 2080775f1
+
+Time (s): cpu = 00:24:39 ; elapsed = 00:11:45 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152249 ; free virtual = 188607
+Phase 7 Post Hold Fix | Checksum: 2080775f1
+
+Time (s): cpu = 00:24:39 ; elapsed = 00:11:45 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152249 ; free virtual = 188607
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.40126 %
+  Global Horizontal Routing Utilization  = 2.4284 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 19822b376
+
+Time (s): cpu = 00:24:45 ; elapsed = 00:11:46 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152249 ; free virtual = 188608
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 19822b376
+
+Time (s): cpu = 00:24:46 ; elapsed = 00:11:47 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152249 ; free virtual = 188608
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 19822b376
+
+Time (s): cpu = 00:25:00 ; elapsed = 00:11:55 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+
+Phase 11 Resolve XTalk
+Phase 11 Resolve XTalk | Checksum: 13f9cdb3c
+
+Time (s): cpu = 00:25:01 ; elapsed = 00:11:55 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 13f9cdb3c
+
+Time (s): cpu = 00:25:04 ; elapsed = 00:11:56 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+
+Phase 13 Post Router Timing
+
+Phase 13.1 Update Timing
+Phase 13.1 Update Timing | Checksum: 13f9cdb3c
+
+Time (s): cpu = 00:25:44 ; elapsed = 00:12:06 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.017  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 13 Post Router Timing | Checksum: 13f9cdb3c
+
+Time (s): cpu = 00:25:45 ; elapsed = 00:12:06 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+Total Elapsed time in route_design: 725.55 secs
+
+Phase 14 Post-Route Event Processing
+Phase 14 Post-Route Event Processing | Checksum: 1ad66d186
+
+Time (s): cpu = 00:25:48 ; elapsed = 00:12:07 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 1ad66d186
+
+Time (s): cpu = 00:25:52 ; elapsed = 00:12:07 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+222 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:25:54 ; elapsed = 00:12:09 . Memory (MB): peak = 9982.098 ; gain = 9.742 ; free physical = 152250 ; free virtual = 188608
+INFO: [Vivado 12-24828] Executing command : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:10 ; elapsed = 00:00:20 . Memory (MB): peak = 9982.098 ; gain = 0.000 ; free physical = 152234 ; free virtual = 188593
+INFO: [Vivado 12-24828] Executing command : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:03:19 ; elapsed = 00:00:40 . Memory (MB): peak = 9982.098 ; gain = 0.000 ; free physical = 152243 ; free virtual = 188603
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:01:41 ; elapsed = 00:00:44 . Memory (MB): peak = 9982.098 ; gain = 0.000 ; free physical = 152233 ; free virtual = 188600
+INFO: [Vivado 12-24838] Running report commands "report_bus_skew, report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24828] Executing command : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+242 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:07 ; elapsed = 00:00:30 . Memory (MB): peak = 10022.117 ; gain = 40.020 ; free physical = 152214 ; free virtual = 188597
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 10022.117 ; gain = 0.000 ; free physical = 152209 ; free virtual = 188593
+generate_parallel_reports: Time (s): cpu = 00:07:42 ; elapsed = 00:02:38 . Memory (MB): peak = 10022.117 ; gain = 40.020 ; free physical = 152209 ; free virtual = 188593
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.49 . Memory (MB): peak = 10022.117 ; gain = 0.000 ; free physical = 152124 ; free virtual = 188568
+Wrote PlaceDB: Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 10022.117 ; gain = 0.000 ; free physical = 151805 ; free virtual = 188557
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10022.117 ; gain = 0.000 ; free physical = 151805 ; free virtual = 188557
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 10022.117 ; gain = 0.000 ; free physical = 151750 ; free virtual = 188547
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.29 . Memory (MB): peak = 10022.117 ; gain = 0.000 ; free physical = 151719 ; free virtual = 188545
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 10022.117 ; gain = 0.000 ; free physical = 151719 ; free virtual = 188547
+Write Physdb Complete: Time (s): cpu = 00:00:25 ; elapsed = 00:00:10 . Memory (MB): peak = 10022.117 ; gain = 0.000 ; free physical = 151719 ; free virtual = 188547
+INFO: [Common 17-1381] The checkpoint '/home/jasper/npu/npu_testing_system/npu_8x8/npu_8x8.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:31 ; elapsed = 00:00:16 . Memory (MB): peak = 10022.117 ; gain = 0.000 ; free physical = 152066 ; free virtual = 188556
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 28 16:27:17 2026...
+[Tue Jul 28 16:27:23 2026] impl_1 finished
+wait_on_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:32:56 . Memory (MB): peak = 3243.047 ; gain = 0.000 ; free physical = 160664 ; free virtual = 197112
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 28 16:27:23 2026...
